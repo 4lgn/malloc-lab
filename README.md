@@ -13,6 +13,7 @@ This README details how you should handle this assignment:
 3. [Submitting your work](#submitting-your-work)
 
 
+
 ## Setting up malloclab
 You must fork this repository to your own user account and work on the
 assignment from that fork. When you are done, you should create a pull request
@@ -60,7 +61,6 @@ git checkout -b groupXX
 git push -u origin groupXX
 ```
 
-
 ## Doing the assignment
 You should now have access to the course files on your user account and have set
 up a tracking branch corresponding to your username on your own fork of the
@@ -92,6 +92,17 @@ git commit -m “Filled in my team struct.”
 It is good practice to do the last step regularly.<br>
 Try making a habit out of committing each new thing that you try out -preferably
 when it works- to more effectively use your revision history.
+
+**Note**:<br>
+This repository's [`gitignore`](./.gitignore)-file will not include changes from
+files other than `mm.c` (the only file we will actually look at). As such, if
+you wish to store changes to other files (tracking a new test-trace, for
+instance), you will have to forcibly add them to the staging area before
+committing, changing the second-to-last step above to:
+
+```
+git add -f my-bal.rep
+```
 
 
 ## Submitting your work
