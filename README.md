@@ -94,11 +94,10 @@ Try making a habit out of committing each new thing that you try out -preferably
 when it works- to more effectively use your revision history.
 
 **Note**:<br>
-This repository's [`gitignore`](./.gitignore)-file will not include changes from
-files other than `mm.c` (the only file we will actually look at). As such, if
-you wish to store changes to other files (tracking a new test-trace, for
-instance), you will have to forcibly add them to the staging area before
-committing, changing the second-to-last step above to:
+This repository's [`gitignore`](./.gitignore)-file will not track new files. As
+such, if you wish to store changes to other files (tracking a new test-trace,
+for instance), you will have to forcibly add them to the staging area before
+committing:
 
 ```
 git add -f my-bal.rep
