@@ -57,6 +57,10 @@ cd Lab3-malloclab
 # Checkout your group’s branch (replace XX with your group number)
 git checkout -b groupXX
 
+# Add information about you in the team struct near the top of the file
+vim mm.c
+git commit -am "Added team information in mm.c"
+
 # Make initial push to remote to set upstream clone URL (replace XX again)
 git push -u origin groupXX
 ```
@@ -67,21 +71,25 @@ up a tracking branch corresponding to your username on your own fork of the
 repository.<br>
 You are now ready to edit `mm.c` according to the instructions in the
 assignment [pdf file](./malloclab.pdf) and the handout’s original
-[README](./README).
+[README](./README).<br>
+As stated there, and above, **please** fill in the team struct in `mm.c` with
+the name(s) and email address(es) of the author(s). If you do not, you will
+receive an error when you try to run the test traces (can be circumvented by
+specifying `-a` when calling `mdriver` - but this shouldn't be necessary, since
+you will have filled in the team struct).
 
 Example workflow:
 ```
 # Open and edit the assignment file in vim
-# (remeber to read what's already there and filling in your team struct)
 vim mm.c
 
 # Create the driver for running and testing your solution
 make
 
-# Quick test run
+# Quick test run (will only work with team struct set)
 ./mdriver -V -f short1-bal.rep
 
-# Test with full test suite
+# Test with full test suite (will only work with team struct set)
 ./mdriver -V
 
 # Assuming that the above instructions do not result in errors, commit them.
