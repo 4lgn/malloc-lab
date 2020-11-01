@@ -24,11 +24,11 @@
  ********************************************************/
 team_t team = {
     /* Team name */
-    "",
+    "algn",
     /* First member's full name */
-    "",
+    "Alexander Grønnegaard Nielsen",
     /* First member's email address */
-    "",
+    "algn@itu.dk",
     /* Second member's full name (leave blank if none) */
     "",
     /* Second member's email address (leave blank if none) */
